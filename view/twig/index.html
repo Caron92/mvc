@@ -1,0 +1,60 @@
+?><!doctype html>
+<html>
+    <meta charset="utf-8">
+    <title><?= $title ?? "No title" ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="<?= url("/favicon.ico") ?>">
+    <link rel="stylesheet" type="text/css" href="<?= url("/css/style.css") ?>">
+
+
+<body>
+
+      <div class="alignleft js-alignleft">
+          <INPUT TYPE="button" VALUE="Back" onClick="history.go(-1);">
+      <h3>Rules:</h3>
+      <p>You can trow up to 2 dices<br>
+    </div>
+      <div class="content">
+      <h1>21 Game</h1>
+  <div> <h2>Your Total:</h2>
+  <p id="score">Click Deal</p>
+</div>
+<div> <h2>You threw:</h2>
+  <p id="lastdraw">Click Deal</p>
+</div>
+
+    <p2><div class="deal" onclick="deal();" id="deal">Deal
+      </div></p2>
+
+    <p2><div class="stand" onclick="stand();" id="stand">Stand
+      </div></p2>
+
+          <h1><div class="bust"id="bust">Bust
+      </div></h1>
+
+          <h1><div class="win5"id="win5">You Win as you reach 21
+      </div></h1>
+              <h1><div class="win21"id="win21">You Win as you got 21
+      </div></h1>
+    <h1><div class="youstand"id="youstand">You stand on:
+      </div></h1>
+        <h1><div class="yourscore"id="yourscore">undefined
+      </div></h1>
+
+<div> <h2>You've threw:</h2>
+  <p id="alldrawn"></p>
+</div>
+
+      <p2><div class="dealerdraw" onclick="dealerdraw();" id="dealerdraw">computer throw
+      </div></p2>
+
+    <h1><div class="dealerscore"id="dealerscore">undefined
+      </div></h1>
+
+  <p2><div class="restart" onclick="restart();" id="restart">Restart
+      </div></p2>
+
+    </div>
+
+</body>
+</html> 

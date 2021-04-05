@@ -1,0 +1,123 @@
+body {
+    overflow-y: scroll;
+    width: 800px;
+    margin: 8px auto;
+    padding-left: 1em;
+    border-left: 1px solid #ccc;
+}
+
+main {
+    min-height: 20em;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    min-height: 4em;
+    text-align: center;
+}
+
+/**
+ * CSS sprite for a dice with six faces.
+ */
+ /**
+  * Style a dice using UTF-8 characters.
+  */
+ .dice-utf8 .dice-1::after { content: "\2680"; }
+ .dice-utf8 .dice-2::after { content: "\2681"; }
+ .dice-utf8 .dice-3::after { content: "\2682"; }
+ .dice-utf8 .dice-4::after { content: "\2683"; }
+ .dice-utf8 .dice-5::after { content: "\2684"; }
+ .dice-utf8 .dice-6::after { content: "\2685"; }
+
+ .dice-utf8 {
+     font-size: 32px;
+ }
+
+ .content{
+   background-color: lightblue;
+   width: 50%;
+   margin:auto;
+   text-align: center;
+   padding: 10px 0px;
+ }
+ .alignleft{text-align:left;
+ float:left;
+ padding: 0px 10px;
+ background-color:lightblue;
+ }
+
+ .deal {
+   width: 100px;
+   border-radius: 3px;
+   font-size: 14px;
+   width: 130px;
+   height: 30px;
+   color: #fff;
+   background-color: green;
+   border: 0;
+   vertical-align: center;
+   padding-top: 10px;
+   text-align:center;
+   margin: auto;
+ }
+
+ .deal:hover {
+   background-color: darkgreen;
+ }
+
+ .stand {
+   width: 100px;
+   border-radius: 3px;
+   font-size: 14px;
+   width: 130px;
+   height: 30px;
+   color: #fff;
+   background-color: orange;
+   border: 0;
+   vertical-align: center;
+   padding-top: 10px;
+   text-align:center;
+   margin: auto;
+ }
+
+ .stand:hover {
+   background-color: darkorange;
+ }
+
+ .restart {
+   width: 100px;
+   border-radius: 3px;
+   font-size: 14px;
+   width: 130px;
+   height: 30px;
+   color: #fff;
+   background-color: black;
+   border: 0;
+   vertical-align: center;
+   padding-top: 10px;
+   text-align:center;
+   margin: auto;
+ }
+
+ .restart:hover {
+   background-color: grey;
+ }
+
+ .dealerdraw {
+   width: 100px;
+   border-radius: 3px;
+   font-size: 14px;
+   width: 130px;
+   height: 30px;
+   color: #fff;
+   background-color: green;
+   border: 0;
+   vertical-align: center;
+   padding-top: 10px;
+   text-align:center;
+   margin: auto;
+ }
+
+ .dealerdraw:hover {
+   background-color: darkgreen;
+ }
