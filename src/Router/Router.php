@@ -1,5 +1,7 @@
 <?php
 
+// @codingStandardsIgnoreStart
+
 declare(strict_types=1);
 
 namespace Mos\Router;
@@ -43,7 +45,7 @@ class Router
         } else if ($method === "GET" && $path === "/twig") {
             $data = [
                 "header" => "Twig page",
-                "message" => "Hey, edit this to do it youreself!",
+                "message" => "21 Game",
             ];
             $body = renderTwigView("index.html", $data);
             sendResponse($body);
@@ -56,28 +58,30 @@ class Router
             $body = renderView("layout/page.php", $data);
             sendResponse($body);
             return;
-        } else if ($method === "GET" && $path === "/diceTest") {
-            // $data = [
-            //     "header" => "DiceTest",
-            //     "message" => "Hey, edit this to do it youreself!",
-            // ];
-            // $body = renderView("layout/diceTest.php", $data);
-            // sendResponse($body);
 
-            $callable = new \char19\DiceTest\GameTest();
-            $callable->playGame();
+        } else if ($method === "GET" && $path === "/diceTest") {
+            $data = [
+                "header" => "Dice Hand",
+                "message" => "Hey, roll up to 100 dices at the same time!",
+            ];
+            $body = renderView("layout/diceTest.php", $data);
+            sendResponse($body);
+
+            // $callable = new \char19\DiceTest\GameTest();
+            // $callable->playGame();
 
             return;
-        } else if ($method === "GET" && $path === "/dice") {
-            // $data = [
-            //     "header" => "Dice",
-            //     "message" => "Hey, edit this to do it youreself!",
-            // ];
-            // $body = renderView("layout/dice.php", $data);
-            // sendResponse($body);
 
-            $callable = new \char19\Dice\Game();
-            $callable->playGame();
+        } else if ($method === "GET" && $path === "/dice") {
+            $data = [
+                "header" => "Dice",
+                "message" => "Set sides on dice below",
+            ];
+            $body = renderView("layout/dice.php", $data);
+            sendResponse($body);
+
+            // $callable = new \char19\DiceTest\GameTest();
+            // $callable->playGame();
 
             return;
         }

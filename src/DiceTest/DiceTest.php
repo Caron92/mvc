@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:ignore
+
 declare(strict_types=1);
 
 namespace char19\DiceTest;

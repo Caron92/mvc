@@ -9,7 +9,6 @@ $header = $header ?? null;
 ?><h1><?= $header ?></h1>
 
 
-
 <?php
 /**
  * Throw some graphic dices.

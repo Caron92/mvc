@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Autoloader for classes with namespace, exclude the vendor name.
  *
  * @param string $class the name of the class.
  */
+
 spl_autoload_register(function ($class) {
     //echo "$class<br>";
 

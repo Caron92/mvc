@@ -1,8 +1,11 @@
-<?php
+//<?php
+//namespace char19\Dice;
+
+// @codingStandardsIgnoreStart
 
 declare(strict_types=1);
 
-namespace char19\Dice;
+
 
 use function Mos\Functions\ {
     redirectTo,
@@ -38,4 +41,4 @@ class Game
         $body = renderView("layout/dice.php", $data);
         sendResponse($body);
     }
-}
+} -->

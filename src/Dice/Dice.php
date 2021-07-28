@@ -1,5 +1,7 @@
 <?php
 
+// @codingStandardsIgnoreStart
+
 declare(strict_types=1);
 
 namespace char19\Dice;

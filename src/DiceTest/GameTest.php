@@ -1,5 +1,7 @@
 <?php
 
+// @codingStandardsIgnoreStart
+
 declare(strict_types=1);
 
 namespace char19\DiceTest;
@@ -24,7 +26,7 @@ class GameTest
     {
         $data = [
             "header" => "DiceTest",
-            "message" => "Hey, edit this to do it youreself!",
+            "message" => "Hey!",
         ];
 
         $die = new DiceTest();
@@ -40,6 +42,7 @@ class GameTest
         $data["diceHandRoll1"] = $diceHandTest->getLastRoll();
 
         $body = renderView("layout/diceTest.php", $data);
+
         sendResponse($body);
     }
 }

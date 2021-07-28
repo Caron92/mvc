@@ -11,6 +11,13 @@
     <exclude-pattern>test/config.php</exclude-pattern>
     <exclude-pattern>theme</exclude-pattern>
     <exclude-pattern>vendor</exclude-pattern>
+    <exclude-pattern>src</exclude-pattern>
+    <exclude-pattern>htdocs</exclude-pattern>
+    <exclude-pattern>config</exclude-pattern>
+    <exclude-pattern>.git</exclude-pattern>
+
+
+
 
     <arg name="encoding" value="utf-8"/>
     <arg name="warning-severity" value="0"/>
