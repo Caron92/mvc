@@ -47,7 +47,7 @@ class Router
                 "header" => "Twig page",
                 "message" => "21 Game",
             ];
-            $body = renderTwigView("index.html", $data);
+            $body = renderTwigView("index.php", $data);
             sendResponse($body);
             return;
         } else if ($method === "GET" && $path === "/some/where") {
@@ -78,6 +78,18 @@ class Router
                 "message" => "Set sides on dice below",
             ];
             $body = renderView("layout/dice.php", $data);
+            sendResponse($body);
+
+            // $callable = new \char19\DiceTest\GameTest();
+            // $callable->playGame();
+
+            return;
+        } else if ($method === "GET" && $path === "/yatzy") {
+            $data = [
+                "header" => "Dice",
+                "message" => "Set sides on dice below",
+            ];
+            $body = renderView("layout/yatzy.php", $data);
             sendResponse($body);
 
             // $callable = new \char19\DiceTest\GameTest();

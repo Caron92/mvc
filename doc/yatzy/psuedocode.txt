@@ -1,0 +1,28 @@
+    Starta spelet
+    Välj hur många tärningar som skall kastas (max 5).
+
+    Markera de tärningar som skall sparas.
+        Om 1 tärning sparas
+            Kasta 4 tärningar
+        eller om 2 tärningar sparas
+            Kasta 3 tärningar
+        eller om 3 tärningar sparas
+            Kasta 2 tärningar
+        eller om 4 tärningar sparas
+            Kasta 1 tärning 
+        Annars
+            Kasta om alla 5 tärningar.
+
+    När spelaren kastat och sparat två gånger
+    - spara och placera resultatet i alt.1-6
+    - Kasta sedan om och upprepa
+
+    När spelaren fyllt i alt. 1-6
+    - Visa summan för spelaren
+        - Om spelaren vill spela igen
+            Välj hur många tärningar som skall kastas (max 5).
+            Annars
+                Avsluta spelet
+
+
+    

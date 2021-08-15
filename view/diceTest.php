@@ -24,4 +24,5 @@ $message = $message ?? null;
 
 <!-- <p><?= $diceHandRoll ?></p> -->
 
-<script type=" text/javascript" src="/dbwebb/mvc/me/game/src/js_functions/dice_functions.js"></script>
+<script type=" text/javascript" src="http://www.student.bth.se/~char19/dbwebb-kurser/mvc/me/game/src/js_functions/dice_functions.js"></script>
+/dbwebb/mvc/me/game/src/js_functions/dice_functions.js

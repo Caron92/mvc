@@ -11,7 +11,7 @@ use function Mos\Functions\url;
 ?><!doctype html>
 <html>
     <meta charset="utf-8">
-    <title><?= $title ?? "No title" ?></title>
+    <title><?= $title ?? "MVC-Game" ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<?= url("/favicon.ico") ?>">
     <link rel="stylesheet" type="text/css" href="<?= url("/css/style.css") ?>">
@@ -30,6 +30,7 @@ use function Mos\Functions\url;
         <a href="<?= url("/diceTest") ?>">DiceHand</a> |
         <a href="<?= url("\..\index_dicegraphic.php") ?>">Dice Graphic</a> |
         <a href="<?= url("/twig") ?>">Game 21</a> |
+        <a href="<?= url("/yatzy") ?>">Yatzy</a> |
 
     </nav>
 </header>
