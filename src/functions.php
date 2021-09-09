@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Mos\Functions;
 
+
+
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
+
+
 
 /**
  * Functions.
@@ -19,10 +23,31 @@ use Twig\Environment;
  */
 function getRoutePath(): string
 {
-    $offset = strlen(dirname($_SERVER["SCRIPT_NAME"]));
-    $path   = substr($_SERVER["REQUEST_URI"], $offset);
+    $offset = strlen(dirname($_SERVER["SCRIPT_NAME"] ?? null));
+    $path   = substr($_SERVER["REQUEST_URI"] ?? "", $offset);
 
     return $path;
+}
+
+
+class Dice
+{
+    const FACES = 6;
+
+    private ?int $roll = null;
+
+    public function roll(): int
+    {
+        $this->roll = rand(1, self::FACES);
+
+        return $this->roll;
+    }
+
+    public function getLastRoll(): int
+    {
+
+        return $this->roll;
+    }
 }
 
 

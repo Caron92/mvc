@@ -1,7 +1,8 @@
 <?php
-namespace char19\DiceHand;
 
 declare(strict_types=1);
+
+namespace char19\DiceHand;
 
 
 

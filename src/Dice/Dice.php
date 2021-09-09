@@ -6,6 +6,10 @@ declare(strict_types=1);
 
 namespace char19\Dice;
 
+use Twig\Loader\FilesystemLoader;
+use Twig\Environment;
+
+
 // use function Mos\Functions\{
 //     destroySession,
 //     redirectTo,
@@ -18,6 +22,8 @@ namespace char19\Dice;
 /**
  * Class Dice.
  */
+
+ 
 class Dice
 {
     const FACES = 6;
@@ -37,3 +43,4 @@ class Dice
         return $this->roll;
     }
 }
+?>

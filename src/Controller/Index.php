@@ -12,6 +12,10 @@ use function Mos\Functions\renderView;
 /**
  * Controller for the index route.
  */
+
+
+
+
 class Index extends ControllerBase
 {
     public function __invoke(): ResponseInterface

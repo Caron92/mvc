@@ -2,10 +2,12 @@
     "autoload": {
         "psr-4": {
             "Mos\\": "src/",
-            "char19\\": "src/"
+            "char19\\": "src/",
+            "char19\\Dice\\": "src/Dice"
         },
         "files": [
             "src/functions.php"
+            
         ]
     },
     "require-dev": {
